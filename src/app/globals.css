@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 这里的 layer 是为了防止 prose 里的样式冲突，保持默认 */
+@layer base {
+  body {
+    @apply bg-white text-gray-900;
+  }
+}
