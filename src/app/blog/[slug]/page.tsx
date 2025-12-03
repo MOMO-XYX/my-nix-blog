@@ -1,4 +1,6 @@
-import FractalTree from '@/components/FractalTree'; 
+import FractalTree from '@/components/mdx/FractalTree'; 
+import SortingVisualizer from '@/components/mdx/SortingVisualizer'; // 新增
+import ActivationPlayground from '@/components/mdx/ActivationPlayground'; // 新增
 import { notFound } from 'next/navigation';
 import { db } from '@/db';
 import { posts } from '@/db/schema';
@@ -53,6 +55,8 @@ const components = {
     </div>
   ),
   FractalTree: FractalTree,  
+  SortingVisualizer: SortingVisualizer, // 新增
+  ActivationPlayground: ActivationPlayground, // 新增
 };
 
 export default async function BlogPost({ params }: PageProps) {
